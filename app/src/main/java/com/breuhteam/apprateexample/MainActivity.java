@@ -11,6 +11,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        AppRate.app_launched(this,"com.breuhteam.diy");
+        AppRate.app_launched(this,getPackageName());
     }
 }
