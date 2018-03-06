@@ -12,5 +12,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         AppRate.app_launched(this,getPackageName());
+       // AppRate.app_launched(this,getPackageName(),0,4);
     }
 }

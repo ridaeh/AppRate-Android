@@ -12,8 +12,8 @@ Add this to your build.grade:
 ```javascript
 	repositories {
 	//...
-        maven { url "https://jitpack.io" }
-    }
+	        maven { url "https://jitpack.io" }
+	}
 ```
 and then in dependencies:
 ```javascript
@@ -26,8 +26,16 @@ and then in dependencies:
 
 Here is how you utilze the library in your java code:
 
+
+if you want to show the rate dialog immediatly
 ```java
 	AppRate.app_launched(this,getPackageName());
+	//app_launched(Context context,String packageName)
+```
+To schedule the show of rate dialog use :
+```java
+	AppRate.app_launched(this,getPackageName(),0,4);
+	//app_launched(Context context,String packageName,int daysUntilPrompt,int lanchesUntilPrompt)
 ```
 
 

@@ -13,12 +13,12 @@ import android.support.v7.app.AlertDialog;
 
 public class AppRate {
 
-    private final static int DAYS_UNTIL_PROMPT = 0;//Min number of days
-    private final static int LAUNCHES_UNTIL_PROMPT = 1;//Min number of launches
+    public static void app_launched(Context context,String packageName) {
+        app_launched(context,packageName,0,0);
 
-    public static void app_launched(Context mContext,String packageName) {
-
-        SharedPreferences prefs = mContext.getSharedPreferences("apprater", 0);
+    }
+    public static void app_launched(Context context,String packageName,int daysUntilPrompt,int lanchesUntilPrompt) {
+        SharedPreferences prefs = context.getSharedPreferences("apprater", 0);
 
         if (prefs.getBoolean("dontshowagain", false)) { return ; }
 
@@ -36,16 +36,15 @@ public class AppRate {
         }
 
         // Wait at least n days before opening
-        if (launch_count >= LAUNCHES_UNTIL_PROMPT) {
+        if (launch_count >= lanchesUntilPrompt) {
             if (System.currentTimeMillis() >= date_firstLaunch +
-                    (DAYS_UNTIL_PROMPT * 24 * 60 * 60 * 1000)) {
-                showRateDialog(mContext,editor,packageName);
+                    (daysUntilPrompt * 24 * 60 * 60 * 1000)) {
+                showRateDialog(context,editor,packageName);
             }
         }
 
         editor.commit();
     }
-
     public static void showRateDialog(final Context mContext, final SharedPreferences.Editor editor, final String packageName) {
         AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
         builder.setTitle(mContext.getResources().getString(R.string.rate_dialog_title));
@@ -80,7 +79,4 @@ public class AppRate {
 
 
     }
-
-
-
 }

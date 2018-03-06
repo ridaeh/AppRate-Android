@@ -1,0 +1,7 @@
+<resources>
+    <string name="rate_dialog_title">تقييم التطبيق</string>
+    <string name="rate_dialog_message">هل احببتم تطبيقنا، هل يمكنكم أخذ لحظة لتقييمه؟ لن يأخذ الامر أكثر من دقيقة. شكرا لدعمكم</string>
+    <string name="rate_dialog_ok">تقييم الآن</string>
+    <string name="rate_dialog_cancel">ذكرني لاحقا</string>
+    <string name="rate_dialog_no">لا,شكرا</string>
+</resources>
