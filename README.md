@@ -23,7 +23,7 @@ allprojects {
 and then in dependencies:
 ```javascript
 	dependencies {
-	        compile 'com.github.ridaeh:AppRate-Android:1.0.0'
+	        compile 'com.github.ridaeh:AppRate-Android:1.0.1'
 	}
 
 ```
