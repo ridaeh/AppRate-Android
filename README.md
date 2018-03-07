@@ -1,5 +1,8 @@
 # AppRate-Android
-Android Library that make easy to implement App rate dialog.
+Android Library that make easy to implement App rate dialog it has :
+
+ * Show rate dialog with more then 10 languages.
+ * Add schedule methode to show rate dialog after a number of days and(or) number of launch.
 
 <img src="https://github.com/ridaeh/AppRate-Android/blob/master/rdme/apprate_dialog.jpeg" width="210" height="330"/>
 
@@ -10,10 +13,12 @@ Ready to see implementation details? Let's scroll.
 
 Add this to your build.grade:
 ```javascript
-	repositories {
+allprojects {
+    repositories {
 	//...
 	        maven { url "https://jitpack.io" }
 	}
+}
 ```
 and then in dependencies:
 ```javascript
