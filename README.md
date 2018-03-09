@@ -1,4 +1,5 @@
 # AppRate-Android
+[![](https://jitpack.io/v/ridaeh/AppRate-Android.svg)](https://jitpack.io/#ridaeh/AppRate-Android)
 
 Android Library that make easy to implement App rate dialog.
 
