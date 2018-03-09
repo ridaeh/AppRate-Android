@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_rate_text_color">@android:color/black</color>
+    <color name="app_rate_btn_color">@android:color/black</color>
+    <color name="app_rate_background">@android:color/white</color>
+    <color name="app_rate_title_color">@android:color/black</color>
+</resources>

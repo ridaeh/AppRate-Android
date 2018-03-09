@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppRate.Theme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@color/app_rate_btn_color</item>
+        <item name="android:textColorPrimary">@color/app_rate_text_color</item>
+        <item name="android:background">@color/app_rate_background</item>
+        <item name="android:windowTitleStyle">@style/AppRate.Theme.Title</item>
+    </style>
+    <style name="AppRate.Theme.Title" >
+        <item name="android:textColor">@color/app_rate_title_color</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+    </style>
+</resources>

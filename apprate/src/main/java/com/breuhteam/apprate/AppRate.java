@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.support.v7.app.AlertDialog;
+import android.util.TypedValue;
 
 /**
  * Created by user007 on 05/03/18.
@@ -46,8 +47,10 @@ public class AppRate {
         editor.commit();
     }
     public static void showRateDialog(final Context mContext, final SharedPreferences.Editor editor, final String packageName) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(mContext,R.style.AppRate_Theme);
         builder.setTitle(mContext.getResources().getString(R.string.rate_dialog_title));
+
         builder.setMessage(mContext.getResources().getString(R.string.rate_dialog_message))
                 .setCancelable(false)
                 .setPositiveButton(mContext.getResources().getString(R.string.rate_dialog_no), new DialogInterface.OnClickListener() {
@@ -74,9 +77,6 @@ public class AppRate {
                         });
         AlertDialog alert = builder.create();
         alert.show();
-
-
-
 
     }
 }

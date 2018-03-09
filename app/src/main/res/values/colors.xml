@@ -3,4 +3,16 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+    <!-- AppRate Colors -->
+    <!-- Used for the title -->
+    <color name="app_rate_title_color">@color/colorPrimary</color>
+    <!-- Used for the text -->
+    <color name="app_rate_text_color">#000</color>
+    <!-- Used for the Buttons -->
+    <color name="app_rate_btn_color">#FF4081</color>
+    <!-- Used for the background -->
+    <color name="app_rate_background">#FFF</color>
+
 </resources>
