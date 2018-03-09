@@ -2,14 +2,14 @@
 
 Android Library that make easy to implement App rate dialog.
 
-##A quick overview of what's in it
+## A quick overview of what's in it
  - Integrate in less than **2 minutes**.
  - Compatible down to **API Level 15**.
  - Show AppRate dialog to rate your app.
  - More then **12 languages**.
  - **Schedule** method to show rate dialog after a number of days and(or) number of launch.
 
-#Screenshots
+# Screenshots
 
 <img src="https://github.com/ridaeh/AppRate-Android/blob/master/rdme/apprate_dialog.jpeg" width="210" height="330"/>
 
