@@ -67,7 +67,7 @@ No need to create a custom theme. Just set these colors (or some of them) and yo
     <color name="app_rate_background">#FFF</color>
 ```
 
-#Apps using the AppRate Dialog
+# Apps using the AppRate Dialog
 
 * [Origami DIY](https://play.google.com/store/apps/details?id=com.breuhteam.origami)
 
